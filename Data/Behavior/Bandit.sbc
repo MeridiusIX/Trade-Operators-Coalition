@@ -1,0 +1,93 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Behavior-Bandit</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+        [BehaviorName:Strike]
+        [TargetData:TOC-Targeting-Bandit]
+        [AutopilotData:TOC-AutoPilot-Bandit]
+
+        [Triggers:TOC-Trigger-BanditDamage]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Autopilot-Bandit</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:50]
+        [FlyLevelWithGravity:false]
+
+        [IdealMinSpeed:12]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:3]
+
+        [MinimumPlanetAltitude:150]
+        [IdealPlanetAltitude:300]
+
+        [UseVelocityCollisionEvasion:false]
+        //[//LimitRotationSpeed:true]
+        //[//MaxRotationMagnitude:1.5]
+
+        [OffsetSpaceMinDistFromTarget:1200]
+        [OffsetSpaceMaxDistFromTarget:1500]
+
+        [OffsetPlanetMinDistFromTarget:200]
+        [OffsetPlanetMaxDistFromTarget:450]
+        [OffsetPlanetMinTargetAltitude:1200]
+        [OffsetPlanetMaxTargetAltitude:1500]
+        [ReverseOffsetDistAltAboveHeight:true]
+
+        [AngleAllowedForForwardThrust:75]
+
+        [UseProjectileLeadPrediction:true]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Targeting-Bandit</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:PlayerAndGrid]
+
+        [MaxDistance:10000]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Faction]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Powered]
+        [GetTargetBy:ClosestDistance]
+
+        [FactionTargets:TRADE]
+        [Owners:NPC]
+
+
+      </Description>
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

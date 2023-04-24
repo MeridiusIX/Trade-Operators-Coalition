@@ -1,0 +1,84 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Trigger-CallCargoShip</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Trigger]
+
+        [UseTrigger:true]
+        [Type:Timer]
+
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:90000]
+        [StartsReady:true]
+
+        [MaxActions:-1]
+        [Actions:TOC-Action-CallCargoShip]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Action-CallCargoShip</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Action]
+
+        [BroadcastCommandProfiles:true]
+        [CommandProfileIds:TOC-Command-CallCargoShip]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Command-CallCargoShip</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Command]
+
+        [CommandCode:TOCDeviateToStation]
+        [SingleRecipient:true]
+        [SendWaypoint:true]
+        [MatchSenderReceiverOwners:true]
+        [Waypoint:TOC-Waypoint-CallCargoShip]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Waypoint-CallCargoShip</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Waypoint]
+
+        [Waypoint:EntityRandom]
+        [RelativeEntity:Self]
+        [MinDistance:50]
+        [MaxDistance:75]
+        [MinAltitude:50]
+        [MaxAltitude:75]
+
+      </Description>
+
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

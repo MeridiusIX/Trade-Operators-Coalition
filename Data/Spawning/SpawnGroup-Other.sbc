@@ -1,0 +1,144 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>TOC-SpawnGroup-BanditA</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:SPRT]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+        [SkipVoxelSpawnChecks:true]
+        [SkipAirDensityCheck:true]
+
+        [IgnoreShieldProviderMod:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-TOC) Brawlin Bandit">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>TOC-Behavior-Bandit</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>TOC-SpawnGroup-BanditB</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:SPRT]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+        [SkipVoxelSpawnChecks:true]
+        [SkipAirDensityCheck:true]
+
+        [IgnoreShieldProviderMod:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-TOC) Brawlin Bandit">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>TOC-Behavior-Bandit</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-TOC) Brawlin Bandit">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>TOC-Behavior-Bandit</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>TOC-SpawnGroup-BanditC</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:SPRT]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+        [SkipVoxelSpawnChecks:true]
+        [SkipAirDensityCheck:true]
+
+        [IgnoreShieldProviderMod:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-TOC) Brawlin Bandit">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>300.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>TOC-Behavior-Bandit</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-TOC) Brawlin Bandit">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>TOC-Behavior-Bandit</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-TOC) Brawlin Bandit">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>TOC-Behavior-Bandit</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>

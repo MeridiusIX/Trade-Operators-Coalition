@@ -1,0 +1,51 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Trigger-StopForPlayer</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Trigger]
+
+        [UseTrigger:true]
+        [Type:PlayerNear]
+        [TargetDistance:499]
+        [MinPlayerReputation:-500]
+
+        [ToggleWithTriggerProfile:TOC-Trigger-ResumeCourse]
+        [ToggledProfileResetsCooldown:true]
+
+        [MinCooldownMs:2000]
+        [MaxCooldownMs:2001]
+        [StartsReady:false]
+
+        [MaxActions:-1]
+        [Actions:TOC-Action-StopForPlayer]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Action-StopForPlayer</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Action]
+        
+        [DisableAutopilot:true]
+        [StopAllRotation:true]
+        [StopAllThrust:true]
+
+      </Description>
+
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

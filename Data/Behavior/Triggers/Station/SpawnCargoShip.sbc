@@ -1,0 +1,71 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Trigger-SpawnCargoShip</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Trigger]
+
+        [UseTrigger:true]
+        [Type:Timer]
+
+        [MinCooldownMs:3600000]
+        [MaxCooldownMs:3600001]
+        [StartsReady:false]
+
+        [MaxActions:-1]
+        [Actions:TOC-Action-SpawnCargoShip]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Action-BanditAttackB</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Action]
+
+        [SpawnEncounter:true]
+        [Spawner:TOC-Spawn-SpawnCargoShip]
+
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Spawn-SpawnCargoShip</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+        [MaxSpawns:-1]
+
+        [SpawnGroups:TOC-SpawnGroup-CargoShip-StationSpawn]
+
+        [MinDistance:5000]
+        [MaxDistance:6000]
+        [MinAltitude:1400]
+        [MaxAltitude:1500]
+
+      </Description>
+
+    </EntityComponent>
+
+
+  </EntityComponents>
+</Definitions>

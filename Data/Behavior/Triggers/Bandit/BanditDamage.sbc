@@ -1,0 +1,52 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!--BanditDamage-->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Trigger-BanditDamage</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Trigger]
+
+        [UseTrigger:true]
+        [Type:Damage]
+
+        [DamageTypes:Any]
+        [ExcludedDamageTypes:Environment]
+        [ExcludedDamageTypes:Deformation]
+
+        [MinCooldownMs:333]
+        [MaxCooldownMs:334]
+        [StartsReady:true]
+        [MaxActions:-1]
+        [Actions:TOC-Action-BanditDamage]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Action-BanditDamage</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Action]
+
+        [ChangeAttackerReputation:true]
+        [ChangeAttackerReputationFaction:TRADE]
+        [ChangeAttackerReputationAmount:1]
+        [ReputationChangesForAllAttackPlayerFactionMembers:true]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

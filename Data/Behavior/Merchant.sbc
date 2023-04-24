@@ -1,0 +1,61 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Behavior-Merchant</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+
+        [BehaviorName:CargoShip]
+
+        [AutopilotData:TOC-Autopilot-Merchant]
+
+        [Triggers:TOC-Trigger-InitMerchantStores]
+        [Triggers:TOC-Trigger-ResumeCourse]
+        [Triggers:TOC-Trigger-StopForPlayer]
+        [Triggers:TOC-Trigger-ShipDamage]
+        [Triggers:TOC-Trigger-RulesOfAcquisition]
+        [Triggers:TOC-Trigger-MerchantAreaTimeout]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Autopilot-Merchant</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:true]
+        [WaypointTolerance:20]
+        [IdealMinSpeed:10]
+        [IdealMaxSpeed:20]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:5]
+
+        [UseSurfaceHoverThrustMode:true]
+        [MinimumPlanetAltitude:350]
+        [IdealPlanetAltitude:500]
+        [AltitudeTolerance:5]
+        [MaxVerticalSpeed:6]
+
+        [MinAngleForLeveledDescent:100]
+        [MaxAngleForLeveledAscent:90]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

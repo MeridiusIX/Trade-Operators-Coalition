@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Behavior-Station</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Behavior]
+        [BehaviorName:Passive]
+
+        [Triggers:TOC-Trigger-CreateSafeZone]
+        [Triggers:TOC-Trigger-CallCargoShip]
+        [Triggers:TOC-Trigger-CargoShipArrival]
+        [Triggers:TOC-Trigger-EnhancedInventory]
+        [Triggers:TOC-Trigger-RefreshEnhancedStores]
+        [Triggers:TOC-Trigger-RefreshBasicStores]
+
+        [RemoteControlCode:TOCStation]
+
+      </Description>
+
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

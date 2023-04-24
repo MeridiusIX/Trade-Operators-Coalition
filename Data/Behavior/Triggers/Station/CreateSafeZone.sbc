@@ -1,0 +1,70 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Trigger-CreateSafeZone</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Trigger]
+
+        [UseTrigger:true]
+        [Type:Session]
+        [StartsReady:true]
+
+        [MaxActions:-1]
+        [Actions:TOC-Action-CreateSafeZone]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Action-CreateSafeZone</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Action]
+
+        [CreateSafeZone:true]
+        [SafeZoneProfile:TOC-SafeZone-StoreSafeZone]
+        [LinkSafeZoneToRemoteControl:true]
+        [SafeZonePositionGridCenter:true]
+        [SafeZonePositionTerrainSurface:true]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-SafeZone-StoreSafeZone</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES SafeZone]
+
+        [Shape:Sphere]
+
+        [Radius:800]
+        [RadiusFromParentEntity:true]
+
+        [Enabled:true]
+        [LinkToParentEntity:true]
+        [IsVisible:true]
+        [Color:{X:0 Y:128 Z:255}]
+
+        [Texture:SafeZone_Texture_Aura]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

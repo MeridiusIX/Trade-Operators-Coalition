@@ -1,0 +1,151 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>TOC-SpawnGroup-PlanetaryLogisticsOutpost</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:TOC-SpawnConditions-StationPlanet]
+        [ReplenishSystems:true]
+        [ManipulationGroups:TOC-Manipulation-StationGroup]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-TOC) Planetary Logistics Outpost">
+          <Position>
+            <X>0.0</X>
+            <Y>47.5</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>TOC-Behavior-Station</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>TOC-SpawnGroup-PlanetaryTradeStationMkI</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:TOC-SpawnConditions-StationPlanet]
+        [ReplenishSystems:true]
+        [ManipulationGroups:TOC-Manipulation-StationGroup]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-TOC) Planetary Trade Station Mk.I">
+          <Position>
+            <X>0.0</X>
+            <Y>32.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>TOC-Behavior-Station</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>TOC-SpawnGroup-TheTower</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:TOC-SpawnConditions-StationPlanet]
+        [ReplenishSystems:true]
+        [ManipulationGroups:TOC-Manipulation-StationGroup]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-TOC) The Tower">
+          <Position>
+            <X>0.0</X>
+            <Y>27.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>TOC-Behavior-Station</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>TOC-SpawnGroup-TheHangar</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:TOC-SpawnConditions-StationPlanet]
+        [ReplenishSystems:true]
+        [ManipulationGroups:TOC-Manipulation-StationGroup]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-TOC) The Hangar">
+          <Position>
+            <X>0.0</X>
+            <Y>37.5</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>TOC-Behavior-Station</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>TOC-SpawnGroup-LittleCity</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:TOC-SpawnConditions-StationPlanet]
+        [ReplenishSystems:true]
+        [ManipulationGroups:TOC-Manipulation-StationGroup]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-TOC) Little City">
+          <Position>
+            <X>0.0</X>
+            <Y>26.5</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>TOC-Behavior-Station</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Trigger-MerchantAreaTimeout</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Trigger]
+
+        [UseTrigger:true]
+        [Type:Timer]
+
+        [MinCooldownMs:1500000]
+        [MaxCooldownMs:1500001]
+        [StartsReady:false]
+
+        [MaxActions:1]
+        [Actions:TOC-Action-MerchantAreaTimeout]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>TOC-Action-MerchantAreaTimeout</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES AI Action]
+
+        [EnableAutopilot:true]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:TOC-Trigger-ResumeCourse]
+        [DisableTriggerNames:TOC-Trigger-StopForPlayer]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
