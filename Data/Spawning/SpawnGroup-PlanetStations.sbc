@@ -22,7 +22,7 @@
         <Prefab SubtypeId="(NPC-TOC) Planetary Logistics Outpost">
           <Position>
             <X>0.0</X>
-            <Y>47.5</Y>
+            <Y>-22.5</Y>
             <Z>0.0</Z>
           </Position>
           <Speed>25</Speed>
@@ -80,7 +80,7 @@
         <Prefab SubtypeId="(NPC-TOC) The Tower">
           <Position>
             <X>0.0</X>
-            <Y>27.0</Y>
+            <Y>34.0</Y>
             <Z>0.0</Z>
           </Position>
           <Speed>25</Speed>
@@ -109,7 +109,7 @@
         <Prefab SubtypeId="(NPC-TOC) The Hangar">
           <Position>
             <X>0.0</X>
-            <Y>37.5</Y>
+            <Y>22.5</Y>
             <Z>0.0</Z>
           </Position>
           <Speed>25</Speed>
@@ -138,7 +138,7 @@
         <Prefab SubtypeId="(NPC-TOC) Little City">
           <Position>
             <X>0.0</X>
-            <Y>26.5</Y>
+            <Y>4</Y>
             <Z>0.0</Z>
           </Position>
           <Speed>25</Speed>

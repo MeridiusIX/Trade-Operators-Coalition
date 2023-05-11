@@ -28,7 +28,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>TOC-Action-BanditAttackB</SubtypeId>
+        <SubtypeId>TOC-Action-SpawnCargoShip</SubtypeId>
       </Id>
       <Description>
 

@@ -41,8 +41,8 @@
         [SuitUpgradeProfileNames:TOC-SuitUpgrades-MainProfile]
 
         [SetDoorsAnyoneCanUse:true]
+        [SetStoresAnyoneCanUse:true]
         [SetConnectorsTradeMode:true]
-
 
       </Description>
 
